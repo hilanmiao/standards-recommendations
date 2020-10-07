@@ -9,6 +9,7 @@ module.exports = {
     themeConfig: {
         logo: '/miaomiao.png',
         repo: 'hilanmiao/standards-recommendations',
+        docsDir: 'docs',
         editLinks: true,
         editLinkText: '在 GitHub 上编辑此页',
         lastUpdated: '上次更新',
@@ -17,6 +18,10 @@ module.exports = {
             {
                 text: '规范',
                 items: [
+                    {
+                        text: 'Developer',
+                        link: '/standard/developer.html'
+                    },
                     {
                         text: 'CSS',
                         link: '/standard/css.html'
@@ -35,10 +40,12 @@ module.exports = {
                     }
                 ]
             },
-            { text: '关于我', link: '/about/' }
+            { text: '代码库', link: '/library/' },
+            { text: '典型案例', link: '/case/' },
+            { text: '关于', link: '/about/' },
         ],
         sidebar: {
-            '/standard/': ['css', 'html', 'javascript', 'eggjs']
+            '/standard/': ['developer', 'css', 'html', 'javascript', 'eggjs']
         },
         smoothScroll: true
     },

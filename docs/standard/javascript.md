@@ -1,3 +1,3 @@
 
 
-# javascript规范
+# JavaScript规范
