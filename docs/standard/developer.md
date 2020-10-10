@@ -1,6 +1,8 @@
 
 
 # 工程师规范
+>参考自[网易NEC框架](http://nec.netease.com/standard/wd-ready.html)
+
 ::: warning 注意
 这里以前端工程师举例。
 :::
