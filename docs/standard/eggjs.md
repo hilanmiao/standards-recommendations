@@ -7,7 +7,7 @@ table {
 </style>
 
 # 1.编码规范
-具体内容请参考[JavaScript规范](#javascript.md)
+具体内容请参考[JavaScript规范](javascript.md)
 ## 1.1 编码格式与语法
 项目默认编码格式统一为UTF-8格式，语法采用ES6+语法
 ## 1.2 代码注释
