@@ -6,11 +6,11 @@ tagline: 全栈开发从这里开始
 actionText: 开始阅读 →
 actionLink: /guide/
 features:
-- title: 简洁至上
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-- title: Vue驱动
-  details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
-- title: 高性能
-  details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
+- title: 创业最佳技术角色
+  details: 全栈工程师不需要其它额外的协助，自己就可以很快地将想法变现。
+- title: 扩展视野
+  details: 最终也许我们需要“学得精”，但是一开始我们一定要“学得杂”。
+- title: 新世界
+  details: 全栈技术中，有太多能帮助程序员开启新世界大门的东西。
 footer: MIT Licensed | Copyright © 2020-present Lan Miao
 ---

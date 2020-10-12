@@ -10,7 +10,7 @@ sidebar: auto
 
 [issue]: https://github.com/hilanmiao/standards-recommendations/issues
 
-[标准代码库]: https://github.com/youzan/vant-weapp
+[标准代码库]: https://github.com/hilanmiao
 
 [VuePress]: https://vuepress.vuejs.org/zh/
 
