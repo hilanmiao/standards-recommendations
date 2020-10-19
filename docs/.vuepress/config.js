@@ -37,6 +37,10 @@ module.exports = {
                     {
                         text: 'Egg.js',
                         link: '/standard/eggjs.html'
+                    },
+                    {
+                        text: 'MySql',
+                        link: '/standard/mysql.html'
                     }
                 ]
             },
@@ -45,7 +49,7 @@ module.exports = {
             { text: '关于', link: '/about/' },
         ],
         sidebar: {
-            '/standard/': ['developer', 'css', 'html', 'javascript', 'eggjs']
+            '/standard/': ['developer', 'css', 'html', 'javascript', 'eggjs', 'mysql']
         },
         smoothScroll: true
     },
