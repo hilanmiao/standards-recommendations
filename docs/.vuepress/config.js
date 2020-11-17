@@ -35,6 +35,10 @@ module.exports = {
                         link: '/standard/javascript.html'
                     },
                     {
+                        text: 'Vue.js',
+                        link: '/standard/vuejs.html'
+                    },
+                    {
                         text: 'Egg.js',
                         link: '/standard/eggjs.html'
                     },
@@ -49,7 +53,7 @@ module.exports = {
             { text: '关于', link: '/about/' },
         ],
         sidebar: {
-            '/standard/': ['developer', 'css', 'html', 'javascript', 'eggjs', 'mysql']
+            '/standard/': ['developer', 'css', 'html', 'javascript', 'vuejs', 'eggjs', 'mysql']
         },
         smoothScroll: true
     },

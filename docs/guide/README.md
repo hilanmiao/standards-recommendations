@@ -37,6 +37,7 @@ sidebar: auto
 - `FileZilla` 开源FTP解决方案  
 - `Terminus` 开源、高度可配置、高颜值、支持多种操作系统的终端
 - `ESLint` 语法正确、风格统一的代码检测插件
+- `YApi` 高效、易用、功能强大的api 管理平台
 
 ## 技术栈 <Badge text="强制" type="error"/>
 ::: warning 重要！
