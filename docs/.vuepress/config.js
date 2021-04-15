@@ -23,6 +23,10 @@ module.exports = {
                         link: '/standard/developer.html'
                     },
                     {
+                        text: 'Git',
+                        link: '/standard/git.html'
+                    },
+                    {
                         text: 'CSS',
                         link: '/standard/css.html'
                     },
@@ -53,7 +57,7 @@ module.exports = {
             { text: '关于', link: '/about/' },
         ],
         sidebar: {
-            '/standard/': ['developer', 'css', 'html', 'javascript', 'vuejs', 'eggjs', 'mysql']
+            '/standard/': ['developer', 'git', 'css', 'html', 'javascript', 'vuejs', 'eggjs', 'mysql']
         },
         smoothScroll: true
     },
