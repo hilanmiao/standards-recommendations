@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>VueJs规范 | 全栈小白开发手册</title>
+    <meta name="generator" content="VuePress 1.6.0">
+    <link rel="icon" href="/standards-recommendations/miaomiao.png">
+    <meta name="description" content="全栈小白开发手册">
+    <link rel="preload" href="/standards-recommendations/assets/css/0.styles.8d4e3822.css" as="style"><link rel="preload" href="/standards-recommendations/assets/js/app.bcf4ed73.js" as="script"><link rel="preload" href="/standards-recommendations/assets/js/2.3f93e23a.js" as="script"><link rel="preload" href="/standards-recommendations/assets/js/11.f11566a6.js" as="script"><link rel="prefetch" href="/standards-recommendations/assets/js/10.735e44fb.js"><link rel="prefetch" href="/standards-recommendations/assets/js/12.045865df.js"><link rel="prefetch" href="/standards-recommendations/assets/js/13.f5480009.js"><link rel="prefetch" href="/standards-recommendations/assets/js/14.a632d6e9.js"><link rel="prefetch" href="/standards-recommendations/assets/js/15.2efff12c.js"><link rel="prefetch" href="/standards-recommendations/assets/js/16.7dca55b4.js"><link rel="prefetch" href="/standards-recommendations/assets/js/17.004ca16f.js"><link rel="prefetch" href="/standards-recommendations/assets/js/18.f19dba22.js"><link rel="prefetch" href="/standards-recommendations/assets/js/19.8a5ec652.js"><link rel="prefetch" href="/standards-recommendations/assets/js/20.efd019e7.js"><link rel="prefetch" href="/standards-recommendations/assets/js/3.66ef7593.js"><link rel="prefetch" href="/standards-recommendations/assets/js/4.48372d2b.js"><link rel="prefetch" href="/standards-recommendations/assets/js/5.ce53fc23.js"><link rel="prefetch" href="/standards-recommendations/assets/js/6.e602d112.js"><link rel="prefetch" href="/standards-recommendations/assets/js/7.a0f81c0e.js"><link rel="prefetch" href="/standards-recommendations/assets/js/8.7b5b2d3e.js"><link rel="prefetch" href="/standards-recommendations/assets/js/9.4f138ef6.js">
+    <link rel="stylesheet" href="/standards-recommendations/assets/css/0.styles.8d4e3822.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/standards-recommendations/" class="home-link router-link-active"><img src="/standards-recommendations/miaomiao.png" alt="全栈小白开发手册" class="logo"> <span class="site-name can-hide">全栈小白开发手册</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/standards-recommendations/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="规范" class="dropdown-title"><span class="title">规范</span> <span class="arrow down"></span></button> <button type="button" aria-label="规范" class="mobile-dropdown-title"><span class="title">规范</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/standards-recommendations/standard/developer.html" class="nav-link">
+  Developer
+</a></li><li class="dropdown-item"><!----> <a href="/standards-recommendations/standard/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/standards-recommendations/standard/css.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/standards-recommendations/standard/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/standards-recommendations/standard/javascript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/standards-recommendations/standard/vuejs.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Vue.js
+</a></li><li class="dropdown-item"><!----> <a href="/standards-recommendations/standard/eggjs.html" class="nav-link">
+  Egg.js
+</a></li><li class="dropdown-item"><!----> <a href="/standards-recommendations/standard/mysql.html" class="nav-link">
+  MySql
+</a></li></ul></div></div><div class="nav-item"><a href="/standards-recommendations/library/" class="nav-link">
+  代码库
+</a></div><div class="nav-item"><a href="/standards-recommendations/case/" class="nav-link">
+  典型案例
+</a></div><div class="nav-item"><a href="/standards-recommendations/about/" class="nav-link">
+  关于
+</a></div> <a href="https://github.com/hilanmiao/standards-recommendations" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="outbound-link-title" role="img" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><title id="outbound-link-title">(opens new window)</title> <path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/standards-recommendations/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="规范" class="dropdown-title"><span class="title">规范</span> <span class="arrow down"></span></button> <button type="button" aria-label="规范" class="mobile-dropdown-title"><span class="title">规范</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/standards-recommendations/standard/developer.html" class="nav-link">
+  Developer
+</a></li><li class="dropdown-item"><!----> <a href="/standards-recommendations/standard/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/standards-recommendations/standard/css.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/standards-recommendations/standard/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/standards-recommendations/standard/javascript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/standards-recommendations/standard/vuejs.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Vue.js
+</a></li><li class="dropdown-item"><!----> <a href="/standards-recommendations/standard/eggjs.html" class="nav-link">
+  Egg.js
+</a></li><li class="dropdown-item"><!----> <a href="/standards-recommendations/standard/mysql.html" class="nav-link">
+  MySql
+</a></li></ul></div></div><div class="nav-item"><a href="/standards-recommendations/library/" class="nav-link">
+  代码库
+</a></div><div class="nav-item"><a href="/standards-recommendations/case/" class="nav-link">
+  典型案例
+</a></div><div class="nav-item"><a href="/standards-recommendations/about/" class="nav-link">
+  关于
+</a></div> <a href="https://github.com/hilanmiao/standards-recommendations" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="outbound-link-title" role="img" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><title id="outbound-link-title">(opens new window)</title> <path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/standards-recommendations/standard/developer.html" class="sidebar-link">工程师规范</a></li><li><a href="/standards-recommendations/standard/git.html" class="sidebar-link">Git规范</a></li><li><a href="/standards-recommendations/standard/css.html" class="sidebar-link">CSS规范</a></li><li><a href="/standards-recommendations/standard/html.html" class="sidebar-link">HTML规范</a></li><li><a href="/standards-recommendations/standard/javascript.html" class="sidebar-link">JavaScript规范</a></li><li><a href="/standards-recommendations/standard/vuejs.html" aria-current="page" class="active sidebar-link">VueJs规范</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/standards-recommendations/standard/vuejs.html#风格指南" class="sidebar-link">风格指南</a></li><li class="sidebar-sub-header"><a href="/standards-recommendations/standard/vuejs.html#代码模板" class="sidebar-link">代码模板</a></li></ul></li><li><a href="/standards-recommendations/standard/eggjs.html" class="sidebar-link">EggJs规范</a></li><li><a href="/standards-recommendations/standard/mysql.html" class="sidebar-link">MySql规范</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vuejs规范"><a href="#vuejs规范" class="header-anchor">#</a> VueJs规范</h1> <h2 id="风格指南"><a href="#风格指南" class="header-anchor">#</a> 风格指南</h2> <p>主要是参照 <a href="https://cn.vuejs.org/v2/style-guide/" target="_blank" rel="noopener noreferrer">vue 官方风格指南<svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="outbound-link-title" role="img" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><title id="outbound-link-title">(opens new window)</title> <path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 。页面内代码规范参考html，css，js规范，其中规则大部分已经配置在<code>eslint</code>中了,
+使用 <code>eslint</code> 校验并格式化代码 。</p> <h3 id="命名规则"><a href="#命名规则" class="header-anchor">#</a> 命名规则</h3> <p>驼峰一般只是针对代码的规约。</p> <h4 id="项目名、目录、文件"><a href="#项目名、目录、文件" class="header-anchor">#</a> 项目名、目录、文件</h4> <p>主要：短横线连接 kebab-case</p> <h4 id="component"><a href="#component" class="header-anchor">#</a> Component</h4> <p>所有的 <code>Component</code> 文件都是以大写开头 (PascalCase)，这也是官方所<a href="https://cn.vuejs.org/v2/style-guide/index.html#%E5%8D%95%E6%96%87%E4%BB%B6%E7%BB%84%E4%BB%B6%E6%96%87%E4%BB%B6%E7%9A%84%E5%A4%A7%E5%B0%8F%E5%86%99%E5%BC%BA%E7%83%88%E6%8E%A8%E8%8D%90" target="_blank" rel="noopener noreferrer">推荐的<svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="outbound-link-title" role="img" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><title id="outbound-link-title">(opens new window)</title> <path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 。</p> <p>但除了 <code>index.vue</code> 。</p> <p>例子：</p> <ul><li><code>@/components/BackToTop/index.vue</code></li> <li><code>@/components/Charts/Line.vue</code></li> <li><code>@/views/example/components/Button.vue</code></li></ul> <h4 id="js-文件"><a href="#js-文件" class="header-anchor">#</a> JS 文件</h4> <p>所有的 <code>.js</code> 文件都遵循横线连接 (kebab-case)。</p> <p>例子：</p> <ul><li><code>@/utils/open-window.js</code></li> <li><code>@/views/svg-icons/require-icons.js</code></li> <li><code>@/components/MarkdownEditor/default-options.js</code></li></ul> <h4 id="views"><a href="#views" class="header-anchor">#</a> Views</h4> <p>在<code>views</code>文件下，代表路由的<code>.vue</code>文件都使用横线连接 (kebab-case)，代表路由的文件夹也是使用同样的规则。</p> <p>例子：</p> <ul><li><code>@/views/svg-icons/index.vue</code></li> <li><code>@/views/svg-icons/require-icons.js</code></li></ul> <p>使用横线连接 (kebab-case)来命名<code>views</code>主要是出于以下几个考虑。</p> <ul><li>横线连接 (kebab-case) 也是官方推荐的命名规范之一 <a href="https://cn.vuejs.org/v2/style-guide/index.html#%E5%8D%95%E6%96%87%E4%BB%B6%E7%BB%84%E4%BB%B6%E6%96%87%E4%BB%B6%E7%9A%84%E5%A4%A7%E5%B0%8F%E5%86%99-%E5%BC%BA%E7%83%88%E6%8E%A8%E8%8D%90" target="_blank" rel="noopener noreferrer">文档<svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="outbound-link-title" role="img" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><title id="outbound-link-title">(opens new window)</title> <path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><code>views</code>下的<code>.vue</code>文件代表的是一个路由，所以它需要和<code>component</code>进行区分(component 都是大写开头)</li> <li>页面的 <code>url</code> 也都是横线连接的，比如<code>https://www.xxx.admin/export-excel</code>，所以路由对应的view应该要保持统一</li> <li>没有大小写敏感问题</li></ul> <h2 id="代码模板"><a href="#代码模板" class="header-anchor">#</a> 代码模板</h2> <div class="language- extra-class"><pre class="language-text"><code>
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/hilanmiao/standards-recommendations/edit/master/docs/standard/vuejs.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="outbound-link-title" role="img" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><title id="outbound-link-title">(opens new window)</title> <path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">11/17/2020, 8:55:56 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/standards-recommendations/standard/javascript.html" class="prev">
+        JavaScript规范
+      </a></span> <span class="next"><a href="/standards-recommendations/standard/eggjs.html">
+        EggJs规范
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/standards-recommendations/assets/js/app.bcf4ed73.js" defer></script><script src="/standards-recommendations/assets/js/2.3f93e23a.js" defer></script><script src="/standards-recommendations/assets/js/11.f11566a6.js" defer></script>
+  </body>
+</html>

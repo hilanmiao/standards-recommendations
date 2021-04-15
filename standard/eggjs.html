@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>EggJs规范 | 全栈小白开发手册</title>
+    <meta name="generator" content="VuePress 1.6.0">
+    <link rel="icon" href="/standards-recommendations/miaomiao.png">
+    <meta name="description" content="全栈小白开发手册">
+    <link rel="preload" href="/standards-recommendations/assets/css/0.styles.8d4e3822.css" as="style"><link rel="preload" href="/standards-recommendations/assets/js/app.bcf4ed73.js" as="script"><link rel="preload" href="/standards-recommendations/assets/js/2.3f93e23a.js" as="script"><link rel="preload" href="/standards-recommendations/assets/js/7.a0f81c0e.js" as="script"><link rel="prefetch" href="/standards-recommendations/assets/js/10.735e44fb.js"><link rel="prefetch" href="/standards-recommendations/assets/js/11.f11566a6.js"><link rel="prefetch" href="/standards-recommendations/assets/js/12.045865df.js"><link rel="prefetch" href="/standards-recommendations/assets/js/13.f5480009.js"><link rel="prefetch" href="/standards-recommendations/assets/js/14.a632d6e9.js"><link rel="prefetch" href="/standards-recommendations/assets/js/15.2efff12c.js"><link rel="prefetch" href="/standards-recommendations/assets/js/16.7dca55b4.js"><link rel="prefetch" href="/standards-recommendations/assets/js/17.004ca16f.js"><link rel="prefetch" href="/standards-recommendations/assets/js/18.f19dba22.js"><link rel="prefetch" href="/standards-recommendations/assets/js/19.8a5ec652.js"><link rel="prefetch" href="/standards-recommendations/assets/js/20.efd019e7.js"><link rel="prefetch" href="/standards-recommendations/assets/js/3.66ef7593.js"><link rel="prefetch" href="/standards-recommendations/assets/js/4.48372d2b.js"><link rel="prefetch" href="/standards-recommendations/assets/js/5.ce53fc23.js"><link rel="prefetch" href="/standards-recommendations/assets/js/6.e602d112.js"><link rel="prefetch" href="/standards-recommendations/assets/js/8.7b5b2d3e.js"><link rel="prefetch" href="/standards-recommendations/assets/js/9.4f138ef6.js">
+    <link rel="stylesheet" href="/standards-recommendations/assets/css/0.styles.8d4e3822.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/standards-recommendations/" class="home-link router-link-active"><img src="/standards-recommendations/miaomiao.png" alt="全栈小白开发手册" class="logo"> <span class="site-name can-hide">全栈小白开发手册</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/standards-recommendations/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="规范" class="dropdown-title"><span class="title">规范</span> <span class="arrow down"></span></button> <button type="button" aria-label="规范" class="mobile-dropdown-title"><span class="title">规范</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/standards-recommendations/standard/developer.html" class="nav-link">
+  Developer
+</a></li><li class="dropdown-item"><!----> <a href="/standards-recommendations/standard/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/standards-recommendations/standard/css.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/standards-recommendations/standard/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/standards-recommendations/standard/javascript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/standards-recommendations/standard/vuejs.html" class="nav-link">
+  Vue.js
+</a></li><li class="dropdown-item"><!----> <a href="/standards-recommendations/standard/eggjs.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Egg.js
+</a></li><li class="dropdown-item"><!----> <a href="/standards-recommendations/standard/mysql.html" class="nav-link">
+  MySql
+</a></li></ul></div></div><div class="nav-item"><a href="/standards-recommendations/library/" class="nav-link">
+  代码库
+</a></div><div class="nav-item"><a href="/standards-recommendations/case/" class="nav-link">
+  典型案例
+</a></div><div class="nav-item"><a href="/standards-recommendations/about/" class="nav-link">
+  关于
+</a></div> <a href="https://github.com/hilanmiao/standards-recommendations" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="outbound-link-title" role="img" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><title id="outbound-link-title">(opens new window)</title> <path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/standards-recommendations/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="规范" class="dropdown-title"><span class="title">规范</span> <span class="arrow down"></span></button> <button type="button" aria-label="规范" class="mobile-dropdown-title"><span class="title">规范</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/standards-recommendations/standard/developer.html" class="nav-link">
+  Developer
+</a></li><li class="dropdown-item"><!----> <a href="/standards-recommendations/standard/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/standards-recommendations/standard/css.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/standards-recommendations/standard/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/standards-recommendations/standard/javascript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/standards-recommendations/standard/vuejs.html" class="nav-link">
+  Vue.js
+</a></li><li class="dropdown-item"><!----> <a href="/standards-recommendations/standard/eggjs.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Egg.js
+</a></li><li class="dropdown-item"><!----> <a href="/standards-recommendations/standard/mysql.html" class="nav-link">
+  MySql
+</a></li></ul></div></div><div class="nav-item"><a href="/standards-recommendations/library/" class="nav-link">
+  代码库
+</a></div><div class="nav-item"><a href="/standards-recommendations/case/" class="nav-link">
+  典型案例
+</a></div><div class="nav-item"><a href="/standards-recommendations/about/" class="nav-link">
+  关于
+</a></div> <a href="https://github.com/hilanmiao/standards-recommendations" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="outbound-link-title" role="img" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><title id="outbound-link-title">(opens new window)</title> <path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/standards-recommendations/standard/developer.html" class="sidebar-link">工程师规范</a></li><li><a href="/standards-recommendations/standard/git.html" class="sidebar-link">Git规范</a></li><li><a href="/standards-recommendations/standard/css.html" class="sidebar-link">CSS规范</a></li><li><a href="/standards-recommendations/standard/html.html" class="sidebar-link">HTML规范</a></li><li><a href="/standards-recommendations/standard/javascript.html" class="sidebar-link">JavaScript规范</a></li><li><a href="/standards-recommendations/standard/vuejs.html" class="sidebar-link">VueJs规范</a></li><li><a href="/standards-recommendations/standard/eggjs.html" aria-current="page" class="active sidebar-link">EggJs规范</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/standards-recommendations/standard/eggjs.html#部署运行" class="sidebar-link">部署运行</a></li><li class="sidebar-sub-header"><a href="/standards-recommendations/standard/eggjs.html#命名规则" class="sidebar-link">命名规则</a></li><li class="sidebar-sub-header"><a href="/standards-recommendations/standard/eggjs.html#目录" class="sidebar-link">目录</a></li><li class="sidebar-sub-header"><a href="/standards-recommendations/standard/eggjs.html#restful-api" class="sidebar-link">RESTFul Api</a></li></ul></li><li><a href="/standards-recommendations/standard/mysql.html" class="sidebar-link">MySql规范</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="eggjs规范"><a href="#eggjs规范" class="header-anchor">#</a> EggJs规范</h1> <div class="custom-block warning"><p class="custom-block-title">注意</p> <p>Linux 大小写敏感
+Linux _下划线是主流</p></div> <h2 id="部署运行"><a href="#部署运行" class="header-anchor">#</a> 部署运行</h2> <p>拷贝以下文件或目录到服务器相应位置</p> <ul><li>app (代码)</li> <li>config (配置)</li> <li>app.js (启动文件)</li> <li>package.json (依赖)</li></ul> <div class="language- extra-class"><pre class="language-text"><code>npm install
+npm run start
+</code></pre></div><h2 id="命名规则"><a href="#命名规则" class="header-anchor">#</a> 命名规则</h2> <ul><li>项目 <code>kebab-case</code></li> <li>目录/文件夹 <code>kebab-case</code></li> <li>文件 <code>snake_case</code></li> <li>数据库 库名、表名、字段名均使用 <code>snake_case</code></li></ul> <h2 id="目录"><a href="#目录" class="header-anchor">#</a> 目录</h2> <div class="language- extra-class"><pre class="language-text"><code>egg-project
+├── app
+│   ├── controller
+│   ├── extend
+│   ├── middleware
+│   ├── model
+│   ├── public
+│   ├── router
+│   ├── schedule
+│   ├── service
+│   ├── view
+|   ├── router.js
+├── config
+├── logs
+├── node_modules
+├── run
+├── typings
+├── .eslintrc
+├── .gitingore
+├── .sequelizerc
+├── app.js
+├── agent.js
+└── package.json
+</code></pre></div><p>以上目录约定如下：</p> <ul><li>app/controller/ 用于解析用户输入，处理后返回响应结果。</li> <li>app/extend/ 用于框架内部对象的拓展(request,response,context,application)和工具类(helper)的编写。</li> <li>app/middleware/ 用于编写中间件。</li> <li>app/model/ 用于放置数据模型。</li> <li>app/public/ 用于放置静态文件。</li> <li>app/router/ 用户放置分离的路由。</li> <li>app/schedule/ 用于放置定时任务。</li> <li>app/service/ 用于编写业务逻辑。</li> <li>app/view/ 用于放置模板文件。</li> <li>app/router.js 用于配置URL路由规则。</li> <li>config/ 用于放置整个项目的配置。</li> <li>logs/ 日志存放目录。</li> <li>node_modules/ 项目所需要的模块文件。</li> <li>run/ 项目运行时，生成的配置文件(可忽略)。</li> <li>typings/ 运行时自动生成的 typeScript 文件(暂不使用typeScript开发)。</li> <li>.eslintrc 插件 eslint 的配置文件。</li> <li>.gitingore git 忽略跟踪文件或目录的规则。</li> <li>.sequelizerc 插件 egg-sequelize 的数据迁移配置文件（暂时不用）。</li> <li>app.js 用于自定义启动时的初始化工作。</li> <li>agent.js 用于自定义启动时的初始化工作。</li> <li>package.json 定义项目的模块及配置信息等。</li></ul> <h2 id="restful-api"><a href="#restful-api" class="header-anchor">#</a> RESTFul Api</h2> <h3 id="状态码"><a href="#状态码" class="header-anchor">#</a> 状态码</h3> <p>http 状态码 统一使用200， 使用自定义状态码进行业务处理</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">99999</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+  <span class="token punctuation">}</span> 
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="版本"><a href="#版本" class="header-anchor">#</a> 版本</h3> <p>通过版本号可以区分api的版本。</p> <ul><li>通过/api/v1/*代表v1版本</li> <li>通过/api/v2/*代表v2版本</li></ul> <h3 id="url"><a href="#url" class="header-anchor">#</a> URL</h3> <ul><li>只能是名词不能是动词</li> <li>小写字符</li> <li>不可使用下划线'_'，可以使用连字符'-'</li> <li>CRUD不可出现在URL中</li> <li>参数列表要用encode</li> <li>避免层级过深的URI，尽量使用查询参数代替路径中的实体导航，如GET /user?sex=female&amp;age=30</li></ul> <p>具体形式如下：</p> <ol><li>/api/{资源名}/{描述名}</li> <li>/api/{资源名}/{对象id}/{描述名}
+例子：</li></ol> <ul><li>GET http://www.demo.com/api/v1/user/my/login-log 获取我的登录日志</li> <li>GET http://www.demo.com/api/v1/user/1 获取用户1的信息</li> <li>POST http://www.demo.com/api/v1/user/login 登录</li> <li>PUT http://www.demo.com/api/v1/user/1 更新用户1的全部信息</li> <li>DELETE http://www.demo.com/api/v1/user/1 删除用户1</li> <li>PATCH http://www.demo.com/api/v1/user/1 更新用户1部分信息</li> <li>GET http://www.demo.com/api/v1/user/1/role 获取用户1的权限信息、</li></ul></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/hilanmiao/standards-recommendations/edit/master/docs/standard/eggjs.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="outbound-link-title" role="img" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><title id="outbound-link-title">(opens new window)</title> <path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">11/17/2020, 8:55:56 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/standards-recommendations/standard/vuejs.html" class="prev">
+        VueJs规范
+      </a></span> <span class="next"><a href="/standards-recommendations/standard/mysql.html">
+        MySql规范
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/standards-recommendations/assets/js/app.bcf4ed73.js" defer></script><script src="/standards-recommendations/assets/js/2.3f93e23a.js" defer></script><script src="/standards-recommendations/assets/js/7.a0f81c0e.js" defer></script>
+  </body>
+</html>
